@@ -1,0 +1,30 @@
+body {
+  background-color: #eef3fb;
+  font-family: Georgia, serif;
+  padding: 30px;
+}
+
+.box {
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 28px;
+  border: 2px solid #2c5d9e;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #1a3a6b;
+  font-size: 26px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+mark {
+  background-color: #ffeb3b;
+}

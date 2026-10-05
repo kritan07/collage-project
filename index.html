@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kritan.div</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #f4f6f7;
+        }
+
+        /* ---------- Top header ---------- */
+        .heading {
+            background-color: #79959e;
+            color: white;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 12px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- Layout: sidebar + content ---------- */
+        .layout {
+            display: flex;
+            min-height: calc(100vh - 70px);
+        }
+
+        /* Left section */
+        .sidebar {
+            width: 220px;
+            background-color: #e3eaec;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #3d555c;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #2f444a;
+            text-decoration: none;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            background-color: #ffffff;
+        }
+
+        .sidebar a:hover {
+            background-color: #79959e;
+            color: white;
+        }
+
+        /* Right section */
+        .body {
+            flex: 1;
+            padding: 20px 30px;
+        }
+
+        .body > h1 {
+            color: #3d555c;
+            margin-top: 0;
+        }
+
+        .task {
+            background-color: white;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .task h2 {
+            margin-top: 0;
+            color: #3d555c;
+        }
+
+        .task h4 {
+            margin: 12px 0 4px;
+        }
+
+        .task ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .task code {
+            background-color: #eef2f3;
+            padding: 1px 5px;
+            border-radius: 4px;
+        }
+
+        .open {
+            display: inline-block;
+            margin-top: 12px;
+            background-color: #79959e;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top header with navigation -->
+    <div class="heading">
+        <h1>Shikshyalaya Collage</h1>
+        <div class="nav">
+            <a href="task1/krian.html">Task1</a>
+            <a href="task2/task2.html">Task2</a>
+            <a href="task3/task3.html">Task3</a>
+        </div>
+    </div>
+
+    <div class="layout">
+
+        <!-- Left section: sidebar navigation -->
+        <div class="sidebar">
+            <h3>Contents</h3>
+            <a href="task1/krian.html">Task 1: Card Design</a>
+            <a href="task2/task2.html">Task 2: Text Formatting</a>
+            <a href="task3/task3.html">Task 3: Navigation Page</a>
+        </div>
+
+        <!-- Right section: content -->
+        <div class="body">
+            <h1>HTML &amp; CSS Practice Tasks</h1>
+
+            <div class="task" id="task1">
+                <h2>Task 1: Stylish Card Design</h2>
+                <h4>HTML used</h4>
+                <ul>
+                    <li><code>&lt;div class="card"&gt;</code> as the container</li>
+                    <li><code>&lt;img&gt;</code> for the local image</li>
+                    <li><code>&lt;h2&gt;</code> heading, <code>&lt;p&gt;</code> description, <code>&lt;a&gt;</code> Read More button</li>
+                </ul>
+                <h4>CSS used</h4>
+                <ul>
+                    <li><code>background-color</code>, <code>padding</code>, <code>margin</code></li>
+                    <li><code>border</code>, <code>border-radius</code>, <code>box-shadow</code></li>
+                    <li><code>color</code>, <code>font-size</code> in an external CSS file</li>
+                </ul>
+                <a class="open" href="task1/krian.html">Open Task 1</a>
+            </div>
+
+            <div class="task" id="task2">
+                <h2>Task 2: Text Formatting Page</h2>
+                <h4>HTML used</h4>
+                <ul>
+                    <li><code>&lt;b&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;u&gt;</code></li>
+                    <li><code>&lt;mark&gt;</code>, <code>&lt;small&gt;</code>, <code>&lt;del&gt;</code>, <code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code></li>
+                    <li><code>&lt;br&gt;</code> and <code>&lt;hr&gt;</code> for layout</li>
+                </ul>
+                <h4>CSS used</h4>
+                <ul>
+                    <li>Page background, box border, text alignment and line spacing</li>
+                </ul>
+                <a class="open" href="task2/index.html">Open Task 2</a>
+            </div>
+
+            <div class="task" id="task3">
+                <h2>Task 3: Mini Navigation Page</h2>
+                <h4>HTML used</h4>
+                <ul>
+                    <li>Three <code>&lt;a&gt;</code> links pointing to same-page sections (<code>#home</code>, <code>#gallery</code>, <code>#contact</code>)</li>
+                    <li>A <code>&lt;div&gt;</code> with a class name and <code>id</code> for each section</li>
+                    <li>A network image and a local image in the Gallery</li>
+                </ul>
+                <h4>CSS used</h4>
+                <ul>
+                    <li>Styled navigation buttons, section background colors</li>
+                    <li>Margin, padding, <code>border-radius</code> and <code>box-shadow</code></li>
+                </ul>
+                <a class="open" href="task3/index.html">Open Task 3</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
